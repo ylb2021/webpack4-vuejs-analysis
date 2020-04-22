@@ -8,13 +8,14 @@ function resolve(dir) {
 module.exports = {
     context: path.resolve(__dirname, "../"),
     entry: {
-        // app: "./src/index.js"
-        app: "./lib/vuejs/platforms/web/entry-runtime-with-compiler.js"
+        // vue: "./lib/vuejs/platforms/web/entry-runtime-with-compiler.js",
+        app: "./example/todomvc/app.js"
     },
     plugins: [
         new HtmlWebpackPlugin({
             filename: "index.html",
-            template: "index.html",
+            // template: "index.html",
+            template: "example/todomvc/index.html",
             inject: true
         }),
         new MiniCssExtractPlugin({
@@ -34,7 +35,7 @@ module.exports = {
         ]
     },
     resolve: {
-        // extensions: [".js", ".vue", ".json"],
+        extensions: [".js", ".json"],
         alias: {
             "compiler": resolve("lib/vuejs/compiler"),
             "core": resolve("lib/vuejs/core"),
