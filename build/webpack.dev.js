@@ -9,10 +9,7 @@ module.exports = merge(common, {
     },
     devServer: {
         contentBase: path.resolve(__dirname, "dist"),
-        // historyApiFallback: true,
-        // compress: true,
         port: 8080,
-        open: "chrome",
-        // watchContentBase: true,
+        open: "chrome"
     }
 });
