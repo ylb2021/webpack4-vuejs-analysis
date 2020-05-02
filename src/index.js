@@ -1,5 +1,5 @@
 // import Vue from 'vue'
-import Vue from "web/entry-runtime"
+import Vue from "web/entry-runtime"// 源文件入口文件
 import App from './app.vue'
 
 Vue.config.productionTip = false

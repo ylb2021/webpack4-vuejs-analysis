@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>vuejs</h1>
+    <h1>webpack4-vuejs-analysis 2021</h1>
   </div>
 </template>
 
