@@ -1,4 +1,9 @@
+// import Vue from 'vue'
+import Vue from "web/entry-runtime"
+import App from './app.vue'
 
+Vue.config.productionTip = false
 
-
-document.write("Hello World 2021!");
+new Vue({
+    render: h => h(App),
+}).$mount('#app')
